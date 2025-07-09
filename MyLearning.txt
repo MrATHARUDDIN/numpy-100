@@ -1,0 +1,4 @@
+This file is for the explenation of code that i didn't understand
+
+N = np.zeros((10,10)) # This makes a vactor of 10,10
+print("%d bytes" % (N.size * N.itemsize))
