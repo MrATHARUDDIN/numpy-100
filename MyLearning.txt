@@ -1,6 +1,6 @@
 This file is for the explenation of code that i didn't understand
 
-#### 4. How to find the memory size of any array (★☆☆)
+############################################ 4. How to find the memory size of any array (★☆☆)
 
 N = np.zeros((10,10)) # This makes a array of 10*10 with zeros
 print("%d bytes" % (N.size * N.itemsize)) 
@@ -10,4 +10,25 @@ print("%d bytes" % (N.size * N.itemsize))
 # N.itemsize return bytes of each element 
 # For float64(default) = 8 bytes
 
-#### 8. Reverse a vector (first element becomes last) (★☆☆)
+############################################ 8. Reverse a vector (first element becomes last) (★☆☆)
+Z = np.arange(1,10)
+Z = Z[::-1] # means reverse the array
+print(Z)
+
+# Z[::-1] means no starting point defind no ending point defind
+
+
+
+############################################ 15. Create a 2d array with 1 on the border and 0 inside (★☆☆)
+Size = 5        #array (5,5)
+Z = np.ones((Size,Size)) #array with put all value 1 on (5,5)
+Z[1:-1,1:-1] = 0
+print(Z)
+
+
+# Z[1:-1,1:-1] = 0
+# Z
+# [Start at 2nd Row : End at 2nd Row by reverse,
+#  Start at 2nd Collumn : End at 2nd Collumn by reverse]
+
+
