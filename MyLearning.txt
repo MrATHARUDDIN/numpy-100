@@ -1,4 +1,13 @@
 This file is for the explenation of code that i didn't understand
 
-N = np.zeros((10,10)) # This makes a vactor of 10,10
-print("%d bytes" % (N.size * N.itemsize))
+#### 4. How to find the memory size of any array (★☆☆)
+
+N = np.zeros((10,10)) # This makes a array of 10*10 with zeros
+print("%d bytes" % (N.size * N.itemsize)) 
+
+# %d for integer 
+# N.size return total number in the array (since it's 10 row * 10 columns = 100 elements)
+# N.itemsize return bytes of each element 
+# For float64(default) = 8 bytes
+
+#### 8. Reverse a vector (first element becomes last) (★☆☆)
